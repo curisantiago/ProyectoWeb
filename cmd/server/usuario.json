@@ -1,0 +1,22 @@
+[
+{
+"Id": 1,
+"Nombre": "dos",
+"Apellido": "Curi",
+"Email": "juan_perez@gmail.com",
+"Edad": 20,
+"Altura": 1.8,
+"Activo": true,
+"FechaDeCreacion": "13/12/2021"
+},
+{
+"Id": 3,
+"Nombre": "dos",
+"Apellido": "Curi",
+"Email": "juan_perez@gmail.com",
+"Edad": 20,
+"Altura": 1.8,
+"Activo": true,
+"FechaDeCreacion": "13/12/2021"
+}
+]

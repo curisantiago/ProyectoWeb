@@ -1,0 +1,101 @@
+definitions:
+  web.Response:
+    properties:
+      code:
+        type: integer
+      data: {}
+      error:
+        type: string
+    type: object
+info:
+  contact:
+    email: santiago.curi@mercadolibre.com
+  description: This API handles users and
+  title: MELI BOOTCAMP ProyectoWeb API
+  version: "1.0"
+paths:
+  /usuarios:
+    delete:
+      description: delete users
+      parameters:
+      - description: token
+        in: header
+        name: token
+        required: true
+        type: string
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/web.Response'
+      tags:
+      - Users
+    get:
+      consumes:
+      - application/json
+      description: get users
+      parameters:
+      - description: token
+        in: header
+        name: token
+        required: true
+        type: string
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/web.Response'
+      tags:
+      - Users
+    patch:
+      consumes:
+      - application/json
+      description: update name users
+      parameters:
+      - description: token
+        in: header
+        name: token
+        required: true
+        type: string
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/web.Response'
+      tags:
+      - Users
+    post:
+      consumes:
+      - application/json
+      description: store users
+      parameters:
+      - description: token
+        in: header
+        name: token
+        required: true
+        type: string
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/web.Response'
+      tags:
+      - Users
+    put:
+      consumes:
+      - application/json
+      description: update users
+      parameters:
+      - description: token
+        in: header
+        name: token
+        required: true
+        type: string
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/web.Response'
+      tags:
+      - Users
+swagger: "2.0"
